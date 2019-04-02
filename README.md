@@ -9,7 +9,7 @@ Add plugin:
 ```xml
 <plugin name="cordova-ml-kit" spec="cordova-ml-kit" />
 ```
-to your config.xml
+to your config.xml<br />Cloned repository folder must be named: cordova-ml-kit!
 
 ## Features
 
