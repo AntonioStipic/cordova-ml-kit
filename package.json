@@ -1,0 +1,24 @@
+{
+  "cordova": {
+    "id": "cordova-ml-kit",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Adds ML Kit support for Firebase",
+  "name": "cordova-ml-kit",
+  "version": "0.0.1",
+  "keywords": [
+    "firebase",
+    "ml-kit",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "peerDependencies": {
+    "cordova-plugin-firebase": "^2.0.0"
+  },
+  "homepage": "https://github.com/antoniostipic/cordova-ml-kit",
+  "repository": "antoniostipic/cordova-ml-kit"
+}

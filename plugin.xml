@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-ml-kit" version="0.0.1">
+    <name>Cordova ML Kit</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+
+    <dependency id="cordova-plugin-firebase" version="^2.0.5" />
+
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/plugin.js" name="plugin">
+            <clobbers target="MlKitPlugin" />
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MlKitPlugin">
+                <param name="android-package" value="hr.antoniostipic.MlKitPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr" />
+        </config-file>
+
+        <framework src="com.google.firebase:firebase-ml-vision:+" />
+        <framework src="com.google.firebase:firebase-ml-vision-image-label-model:+" />
+
+        <source-file src="src/android/hr/antoniostipic/MlKitPlugin.java" target-dir="src/hr/antoniostipic" />
+    </platform>
+
+    <!-- ios -->
+    <!--     <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <clobbers target="MlKitPlugin" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="MlKitPlugin">
+                <param name="ios-package" value="MlKitPlugin" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/MlKitPlugin.h" />
+        <source-file src="src/ios/MlKitPlugin.m" />
+    </platform> -->
+</plugin>
