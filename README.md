@@ -49,6 +49,7 @@ Image Labeling on Cloud
 
 ## Usage
 
+```javascript
 window['MlKitPlugin'].getText(file, {},
     (success) => {
         console.log("getText success", success);
@@ -56,4 +57,5 @@ window['MlKitPlugin'].getText(file, {},
     (error) => {
         console.log("getText error", error);
 });
+```
 
