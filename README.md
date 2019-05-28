@@ -4,12 +4,11 @@ Implements ML Kit as Cordova plugin on iOS and Android.
 
 ## Installation
 
-Clone this repository to the root folder of your project.
-Add plugin:
-```xml
-<plugin name="cordova-ml-kit" spec="cordova-ml-kit" />
+Run:
+
 ```
-to your config.xml<br /><br />Cloned repository folder must be named: cordova-ml-kit!
+npm i cordova-ml-kit
+```
 
 ## Features
 
