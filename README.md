@@ -53,7 +53,7 @@ Image Labeling on Cloud
 ## Usage
 
 ```javascript
-window['MlKitPlugin'].getText(file, {},
+window["MlKitPlugin"].getText(fileBuffer, {},
     (success) => {
         console.log("getText success", success);
     },
